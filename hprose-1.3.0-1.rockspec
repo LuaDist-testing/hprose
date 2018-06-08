@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "hprose"
-version = "1.2.0-1"
+version = "1.3.0-1"
 -- LuaDist source
 source = {
-  tag = "1.2.0-1",
+  tag = "1.3.0-1",
   url = "git://github.com/LuaDist-testing/hprose.git"
 }
 -- Original source
 -- source = {
 --    url = "git://github.com/hprose/hprose-lua",
---    tag = "v1.2.0"
+--    tag = "v1.3.0"
 -- }
 description = {
    summary = "Hprose for Lua",
