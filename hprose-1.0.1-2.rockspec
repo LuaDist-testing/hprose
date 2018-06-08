@@ -1,20 +1,20 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "hprose"
-version = "1.0.1-1"
+version = "1.0.1-2"
 -- LuaDist source
 source = {
-  tag = "1.0.1-1",
+  tag = "1.0.1-2",
   url = "git://github.com/LuaDist-testing/hprose.git"
 }
 -- Original source
 -- source = {
---     url = "git://github.com/hprose/hprose-lua",
---     tag = "v1.0.1"
+--    url = "git://github.com/hprose/hprose-lua",
+--    tag = "v1.0.1"
 -- }
 description = {
-    summary = "Hprose for Lua",
-    detailed = [[
+   summary = "Hprose for Lua",
+   detailed = [[
         Hprose is a High Performance Remote Object Service Engine.
 
         It is a modern, lightweight, cross-language, cross-platform, object-oriented, high performance, remote dynamic communication middleware. It is not only easy to use, but powerful. You just need a little time to learn, then you can use it to easily construct cross language cross platform distributed application system.
@@ -43,28 +43,27 @@ description = {
 
         This project is the implementation of Hprose for Lua.
     ]],
-    homepage = "http://hprose.com",
-    license = "MIT"
+   homepage = "http://hprose.com",
+   license = "MIT"
 }
 dependencies = {
-    "lua >= 5.1",
-    "luasocket"
+   "lua >= 5.1", "luasocket"
 }
 build = {
-    type = "builtin",
-    modules = {
-        hprose = "src/hprose.lua",
-        ["hprose.common"] = "src/hprose/common.lua",
-        ["hprose.tags"] = "src/hprose/tags.lua",
-        ["hprose.result_mode"] = "src/hprose/result_mode.lua",
-        ["hprose.input_stream"] = "src/hprose/input_stream.lua",
-        ["hprose.output_stream"] = "src/hprose/output_stream.lua",
-        ["hprose.class_manager"] = "src/hprose/class_manager.lua",
-        ["hprose.reader"] = "src/hprose/reader.lua",
-        ["hprose.writer"] = "src/hprose/writer.lua",
-        ["hprose.formatter"] = "src/hprose/formatter.lua",
-        ["hprose.client"] = "src/hprose/client.lua",
-        ["hprose.http_client"] = "src/hprose/http_client.lua",
-        ["hprose.tcp_client"] = "src/hprose/tcp_client.lua",
-    }
+   type = "builtin",
+   modules = {
+      hprose = "src/hprose.lua",
+      ['hprose.class_manager'] = "src/hprose/class_manager.lua",
+      ['hprose.client'] = "src/hprose/client.lua",
+      ['hprose.common'] = "src/hprose/common.lua",
+      ['hprose.formatter'] = "src/hprose/formatter.lua",
+      ['hprose.http_client'] = "src/hprose/http_client.lua",
+      ['hprose.input_stream'] = "src/hprose/input_stream.lua",
+      ['hprose.output_stream'] = "src/hprose/output_stream.lua",
+      ['hprose.reader'] = "src/hprose/reader.lua",
+      ['hprose.result_mode'] = "src/hprose/result_mode.lua",
+      ['hprose.tags'] = "src/hprose/tags.lua",
+      ['hprose.tcp_client'] = "src/hprose/tcp_client.lua",
+      ['hprose.writer'] = "src/hprose/writer.lua"
+   }
 }
